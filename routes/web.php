@@ -17,3 +17,7 @@ Route::get('login', [LoginController::class, 'showLoginForm'])->name('login');
 Route::post('login', [LoginController::class, 'login']);
 
 Route::get('dashboard', [DashboardController::class, 'index'])->name('dashboard');
+
+// Route untuk Data Truk tanpa middleware auth
+Route::resource('trucks', DataTrukController::class);
+Route::get('dataTruk', [DataTrukController::class, 'index'])->name('dataTruk');
