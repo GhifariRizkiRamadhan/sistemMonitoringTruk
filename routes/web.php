@@ -21,3 +21,6 @@ Route::get('dashboard', [DashboardController::class, 'index'])->name('dashboard'
 // Route untuk Data Truk tanpa middleware auth
 Route::resource('trucks', DataTrukController::class);
 Route::get('dataTruk', [DataTrukController::class, 'index'])->name('dataTruk');
+
+Route::resource('shipments', ShipmentsController::class);
+Route::get('catatanAngkutan', [ShipmentsController::class, 'index'])->name('catatanAngkutan');
