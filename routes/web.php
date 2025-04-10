@@ -30,3 +30,7 @@ Route::get('catatanAngkutan', [ShipmentsController::class, 'index'])->name('cata
 // Route untuk Catatan Operasional
 Route::resource('operational-expenses', OperationalExpensesController::class);
 Route::get('catatanOperasional', [OperationalExpensesController::class, 'index'])->name('catatanOperasional');
+
+//pengecekan bulanan
+Route::resource('monthly-checks', MonthlyCheckController::class);
+Route::get('pengecekanBulanan', [MonthlyCheckController::class, 'index'])->name('pengecekanBulanan');
