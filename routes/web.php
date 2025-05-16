@@ -8,6 +8,7 @@ use App\Http\Controllers\DataTrukController;
 use App\Http\Controllers\ShipmentsController;
 use App\Http\Controllers\OperationalExpensesController;
 use App\Http\Controllers\MonthlyCheckController;
+use App\Http\Controllers\IncomeReportController;
 
 //Route::get('/test-connection', [TestController::class, 'testConnection']);
 
@@ -34,3 +35,6 @@ Route::get('catatanOperasional', [OperationalExpensesController::class, 'index']
 //pengecekan bulanan
 Route::resource('monthly-checks', MonthlyCheckController::class);
 Route::get('pengecekanBulanan', [MonthlyCheckController::class, 'index'])->name('pengecekanBulanan');
+
+//laporan
+Route::get('reports/income', [IncomeReportController::class, 'index'])->name('incomeReport');

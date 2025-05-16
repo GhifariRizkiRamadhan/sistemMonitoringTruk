@@ -124,7 +124,7 @@
             </a>
             <ul class="">
                 <li>
-                    <a href="">
+                    <a href="{{ route('incomeReport') }}">
                         <i class="fas fa-angle-right"></i> Laporan Pendapatan
                     </a>
                 </li>
