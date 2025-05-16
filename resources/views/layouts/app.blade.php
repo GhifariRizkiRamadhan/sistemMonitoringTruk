@@ -134,12 +134,12 @@
                     </a>
                 </li>
                 <li>
-                    <a href="">
+                    <a href="{{ route('monthlyChecksReport') }}">
                         <i class="fas fa-angle-right"></i> Laporan Pengecekan
                     </a>
                 </li>
                 <li>
-                    <a href="">
+                    <a href="{{ route('financialReport') }}">
                         <i class="fas fa-angle-right"></i> Laporan Keuangan
                     </a>
                 </li>

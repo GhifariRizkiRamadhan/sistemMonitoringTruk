@@ -39,3 +39,5 @@ Route::get('pengecekanBulanan', [MonthlyCheckController::class, 'index'])->name(
 //laporan
 Route::get('reports/income', [IncomeReportController::class, 'index'])->name('incomeReport');
 Route::get('reports/operational', [OperationalReportController::class, 'index'])->name('operationalReport');
+Route::get('reports/monthly_checks', [MonthlyChecksReportController::class, 'index'])->name('monthlyChecksReport');
+Route::get('reports/financial', [FinancialReportController::class, 'index'])->name('financialReport');
