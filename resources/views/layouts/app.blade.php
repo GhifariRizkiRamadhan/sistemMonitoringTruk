@@ -129,7 +129,7 @@
                     </a>
                 </li>
                 <li>
-                    <a href="">
+                    <a href="{{ route('operationalReport') }}">
                         <i class="fas fa-angle-right"></i> Laporan Operasional
                     </a>
                 </li>
